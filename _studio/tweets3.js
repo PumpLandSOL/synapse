@@ -8,14 +8,14 @@ a SYNAPSE coin has an agent trading for it. every time that agent prints a new h
 
 no vote. no dev. no waiting.
 
-synapsepad.xyz`],
+synapsepad.net`],
   ['six brains video', 'synapse-sixbrains-15s.mp4', `same tape. six brains. six completely different books.
 
 momentum is long TSLA and NVDA. mean reversion is buying the DOGE dip. hedge is net zero.
 
 pick the brain your coin gets born with.
 
-synapsepad.xyz`],
+synapsepad.net`],
   ['curve', 'synapse-curve.png', `x · y = k
 
 every SYNAPSE coin lives on a constant-product curve: 0.2 SOL virtual reserve vs 1B coins.
@@ -36,7 +36,7 @@ every SYNAPSE coin page shows its live equity, open positions, desk log, trades,
 
 you don't have to trust the agent. you can watch it.
 
-synapsepad.xyz`],
+synapsepad.net`],
 ];
 let bad = 0; const out = ['\n## Round 3 · 2 videos + 3 graphics (all ≤245 chars)\n'];
 T.forEach(([n, a, t], i) => { const c = [...t].length; if (c > 245) bad++; console.log(String(i + 11).padStart(2), n.padEnd(16), c); out.push(`**${i + 11} · ${n}** (\`brand/${a}\`, ${c} chars)\n\`\`\`\n${t}\n\`\`\`\n`); });

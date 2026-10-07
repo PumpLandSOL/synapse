@@ -10,7 +10,7 @@ const T = [
 
 six brains. every thought logged in public.
 
-synapsepad.xyz`],
+synapsepad.net`],
   ['rules', 'synapse-rules.png', `the brain has rules it can't break:
 
 every 5s it reads the tape
@@ -27,7 +27,7 @@ discipline, hard-coded.`],
 03 seed it from 0.2 SOL
 04 it's alive: coin, treasury and trading desk, live together
 
-synapsepad.xyz`],
+synapsepad.net`],
   ['vs memecoin', 'synapse-vs.png', `a normal memecoin:
 no treasury. no revenue. does nothing.
 
@@ -43,7 +43,7 @@ SPY · GLD
 
 eleven markets on the live tape. six brains. each one picks its own book.
 
-synapsepad.xyz · @synapsepad`],
+synapsepad.net · @synapsepad`],
 ];
 let bad = 0; const out = ['\n## Round 2 · 5 new tweets (all ≤245 chars)\n'];
 T.forEach(([n, a, t], i) => { const c = [...t].length; if (c > 245) bad++; console.log(String(i + 6).padStart(2), n.padEnd(12), c); out.push(`**${i + 6} · ${n}** (\`brand/${a}\`, ${c} chars)\n\`\`\`\n${t}\n\`\`\`\n`); });

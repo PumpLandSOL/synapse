@@ -1,6 +1,6 @@
 # SYNAPSE · X kit
 
-**Handle:** @synapsepad · **Site:** https://synapsepad.xyz · **Chain:** Solana · **Repo:** github.com/PumpLandSOL/synapse
+**Handle:** @synapsepad · **Site:** https://synapsepad.net · **Chain:** Solana · **Repo:** github.com/PumpLandSOL/synapse
 
 **Name:** SYNAPSE
 **Bio:** Memecoins with a brain. Launch a coin, it gets a treasury, a brain and a trading desk. Profits buy the coin back. On Solana. $SYN
@@ -28,7 +28,7 @@ Launch a coin and it gets a treasury, a brain and a trading desk.
 It earns fees on its own trades, works the live tape, and buys itself back with the profits.
 
 Memecoins with a brain.
-synapsepad.xyz
+synapsepad.net
 ```
 
 **2 · How it works** · `synapse-howitworks.png`
@@ -40,7 +40,7 @@ How a coin gets a brain:
 03 Trade: the brain works the live tape every 5s
 04 Fund itself: new highs buy the coin back
 
-synapsepad.xyz
+synapsepad.net
 ```
 
 **3 · Six brains** · `synapse-brains.png`
@@ -62,7 +62,7 @@ Equity since seed. Open positions with P&L. Every open, close and buyback. The r
 
 A coin whose brain trades well gets bought back. One whose brain trades badly does not.
 
-synapsepad.xyz
+synapsepad.net
 ```
 
 **5 · The flywheel** · `synapse-flywheel.png`
@@ -93,7 +93,7 @@ every SYNAPSE coin has a brain, and it thinks out loud.
 
 six brains. every thought logged in public.
 
-synapsepad.xyz
+synapsepad.net
 ```
 
 **7 · rules** (`brand/synapse-rules.png`, 183 chars)
@@ -118,7 +118,7 @@ launching a memecoin with a brain takes 4 steps:
 03 seed it from 0.2 SOL
 04 it's alive: coin, treasury and trading desk, live together
 
-synapsepad.xyz
+synapsepad.net
 ```
 
 **9 · vs memecoin** (`brand/synapse-vs.png`, 217 chars)
@@ -142,7 +142,7 @@ SPY · GLD
 
 eleven markets on the live tape. six brains. each one picks its own book.
 
-synapsepad.xyz · @synapsepad
+synapsepad.net · @synapsepad
 ```
 
 ## Round 3 · 2 videos + 3 graphics (all ≤245 chars)
@@ -155,7 +155,7 @@ a SYNAPSE coin has an agent trading for it. every time that agent prints a new h
 
 no vote. no dev. no waiting.
 
-synapsepad.xyz
+synapsepad.net
 ```
 
 **12 · six brains video** (`brand/synapse-sixbrains-15s.mp4`, 203 chars)
@@ -166,7 +166,7 @@ momentum is long TSLA and NVDA. mean reversion is buying the DOGE dip. hedge is 
 
 pick the brain your coin gets born with.
 
-synapsepad.xyz
+synapsepad.net
 ```
 
 **13 · curve** (`brand/synapse-curve.png`, 214 chars)
@@ -199,5 +199,5 @@ every SYNAPSE coin page shows its live equity, open positions, desk log, trades,
 
 you don't have to trust the agent. you can watch it.
 
-synapsepad.xyz
+synapsepad.net
 ```

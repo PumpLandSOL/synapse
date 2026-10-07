@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SYNAPSE Docs — how a coin gets a brain</title><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%229%22%20fill%3D%22%230c0a14%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke-width%3D%222.8%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M6.6%2015.6Q2.6%2012.6%203.4%207.4M6.6%2024.4Q2.6%2027.4%203.4%2032.6%22%20stroke%3D%22%2314f195%22%2F%3E%3Cpath%20d%3D%22M33.4%2015.6Q37.4%2012.6%2036.6%207.4M33.4%2024.4Q37.4%2027.4%2036.6%2032.6%22%20stroke%3D%22%23dc1fff%22%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2211.2%22%20cy%3D%2220%22%20r%3D%226.6%22%20fill%3D%22%2314f195%22%2F%3E%3Ccircle%20cx%3D%2228.8%22%20cy%3D%2220%22%20r%3D%226.6%22%20fill%3D%22%23dc1fff%22%2F%3E%3Cg%20fill%3D%22%23f1eefa%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2214.6%22%20r%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%221.9%22%2F%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2225.4%22%20r%3D%221.5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 <meta name="description" content="Technical documentation for SYNAPSE on Solana: launch, bonding curve, fees, the agent loop, the six brains, buybacks, SOL deposits and withdrawals, parameters and the HTTP API.">
-<meta property="og:url" content="https://synapsepad.xyz/docs"><link rel="canonical" href="https://synapsepad.xyz/docs"><meta property="og:title" content="SYNAPSE Docs"><meta property="og:description" content="Launch, curve, fees, agent loop, brains, buybacks, deposits, parameters, API."><meta property="og:image" content="https://synapsepad.xyz/brand/synapse-keyart.png"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://synapsepad.net/docs"><link rel="canonical" href="https://synapsepad.net/docs"><meta property="og:title" content="SYNAPSE Docs"><meta property="og:description" content="Launch, curve, fees, agent loop, brains, buybacks, deposits, parameters, API."><meta property="og:image" content="https://synapsepad.net/brand/synapse-keyart.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Sora:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -180,7 +180,7 @@ hwm    = cash                   <span class="m">// the new mark is the cash left
 <tr><td>POST /api/deposit</td><td>wallet, tx (signature)</td><td>Amount credited after on-chain verification</td></tr>
 <tr><td>POST /api/withdraw</td><td>wallet, amount</td><td>Queued withdrawal</td></tr></table>
 <pre><code><span class="m">// launch from the command line</span>
-curl -X POST https://synapsepad.xyz/api/launch \
+curl -X POST https://synapsepad.net/api/launch \
   -H <span class="v">'content-type: application/json'</span> \
   -d <span class="v">'{"wallet":"YOUR_SOLANA_ADDRESS","name":"Brainy","ticker":"BRN","brain":"MOMENTUM","seed":0.5}'</span></code></pre>
 <p>Brain ids: <code>MOMENTUM</code> <code>REVERSION</code> <code>TREND</code> <code>DEGEN</code> <code>HEDGE</code> <code>VOLHUNT</code>. Coin pages live at <code>/c/&lt;id&gt;</code>.</p>
@@ -198,6 +198,6 @@ curl -X POST https://synapsepad.xyz/api/launch \
 <p style="margin-top:30px"><a href="/">← Back to the ward</a></p>
 </main>
 </div>
-<footer><span>SYNAPSE · memecoins with a brain · Solana</span><span>synapsepad.xyz · @synapsepad</span></footer>
+<footer><span>SYNAPSE · memecoins with a brain · Solana</span><span>synapsepad.net · @synapsepad</span></footer>
 </body>
 </html>
