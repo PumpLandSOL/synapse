@@ -1,6 +1,6 @@
 # SYNAPSE · X kit
 
-**Handle:** @synapsepad · **Site:** https://synapsepad.net · **Chain:** Solana · **Repo:** github.com/PumpLandSOL/synapse
+**Handle:** @SynapsePadSOL · **Site:** https://synapsepad.net · **Chain:** Solana · **Repo:** github.com/PumpLandSOL/synapse
 
 **Name:** SYNAPSE
 **Bio:** Memecoins with a brain. Launch a coin, it gets a treasury, a brain and a trading desk. Profits buy the coin back. On Solana. $SYN
@@ -142,7 +142,7 @@ SPY · GLD
 
 eleven markets on the live tape. six brains. each one picks its own book.
 
-synapsepad.net · @synapsepad
+synapsepad.net · @SynapsePadSOL
 ```
 
 ## Round 3 · 2 videos + 3 graphics (all ≤245 chars)

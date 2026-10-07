@@ -43,7 +43,7 @@ SPY · GLD
 
 eleven markets on the live tape. six brains. each one picks its own book.
 
-synapsepad.net · @synapsepad`],
+synapsepad.net · @SynapsePadSOL`],
 ];
 let bad = 0; const out = ['\n## Round 2 · 5 new tweets (all ≤245 chars)\n'];
 T.forEach(([n, a, t], i) => { const c = [...t].length; if (c > 245) bad++; console.log(String(i + 6).padStart(2), n.padEnd(12), c); out.push(`**${i + 6} · ${n}** (\`brand/${a}\`, ${c} chars)\n\`\`\`\n${t}\n\`\`\`\n`); });
