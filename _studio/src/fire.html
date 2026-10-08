@@ -1,0 +1,30 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="_base.css">
+<style>body{width:1280px;height:720px}.c{position:absolute;inset:0;display:grid;place-items:center;text-align:center}.c>div{background:radial-gradient(closest-side,#07060cf2 70%,#07060c00);padding:60px 120px}
+#net{position:absolute;inset:0}
+</style><body><div class="amb" id="amb"></div><div class="scan"></div>
+<svg id="net" viewBox="0 0 1280 720"></svg>
+<div class="c" id="t1"><div class="mi" style="font-size:58px">Every coin <span class="iri">is a neuron.</span></div></div>
+<div class="c" id="t2"><div class="mi" style="font-size:58px">Every trade <span class="iri">is a signal.</span></div></div>
+<div class="c" id="t3"><div class="mi" style="font-size:50px;line-height:1.35">Signals fire.<br><span class="iri">Profits buy the coin back.</span></div></div>
+<div class="c" id="t4"><div><svg viewBox="0 0 40 40" style="width:150px"><g fill="none" stroke-width="2.8" stroke-linecap="round"><path d="M6.6 15.6Q2.6 12.6 3.4 7.4M6.6 24.4Q2.6 27.4 3.4 32.6" stroke="#14f195"/><path d="M33.4 15.6Q37.4 12.6 36.6 7.4M33.4 24.4Q37.4 27.4 36.6 32.6" stroke="#dc1fff"/></g><circle cx="11.2" cy="20" r="6.6" fill="#14f195"/><circle cx="28.8" cy="20" r="6.6" fill="#dc1fff"/><g fill="#f1eefa" id="dots"><circle cx="20" cy="14.6" r="1.5"/><circle cx="20" cy="20" r="1.9"/><circle cx="20" cy="25.4" r="1.5"/></g></svg>
+<div class="mi" style="font-size:64px;letter-spacing:.3em;margin-top:24px">SYNAPSE</div><div class="mi" style="font-size:22px;margin-top:16px">memecoins <span class="iri">that fire.</span></div><div style="font-size:21px;letter-spacing:.2em;color:#b3aac9;margin-top:20px">synapsepad.net · @SynapsePadSOL</div></div></div>
+<script>
+const $=(i)=>document.getElementById(i),cl=(x)=>Math.max(0,Math.min(1,x)),e=(x)=>1-Math.pow(1-cl(x),3),win=(t,a,b,f=.3)=>cl((t-a)/f)*cl((b-t)/f);
+let seed=5;const r=()=>(seed=(seed*16807)%2147483647)/2147483647;
+const N=[];for(let i=0;i<38;i++)N.push([60+r()*1160,50+r()*620,r()<.5?'#14f195':'#dc1fff']);
+const E=[];N.forEach((a,i)=>{const d=N.map((b,j)=>[j,Math.hypot(a[0]-b[0],a[1]-b[1])]).filter(x=>x[0]!==i).sort((x,y)=>x[1]-y[1]).slice(0,2);d.forEach(([j])=>{if(i<j)E.push([i,j])});});
+const NS='http://www.w3.org/2000/svg',svg=$('net');
+const L=E.map(([i,j])=>{const l=document.createElementNS(NS,'line');l.setAttribute('x1',N[i][0]);l.setAttribute('y1',N[i][1]);l.setAttribute('x2',N[j][0]);l.setAttribute('y2',N[j][1]);l.setAttribute('stroke','#2e2646');l.setAttribute('stroke-width','2');svg.appendChild(l);return l;});
+const C=N.map(n=>{const c=document.createElementNS(NS,'circle');c.setAttribute('cx',n[0]);c.setAttribute('cy',n[1]);c.setAttribute('r','7');c.setAttribute('fill',n[2]);svg.appendChild(c);return c;});
+const P=E.map(()=>{const c=document.createElementNS(NS,'circle');c.setAttribute('r','4');c.setAttribute('fill','#f1eefa');c.style.filter='drop-shadow(0 0 8px #fff)';svg.appendChild(c);return c;});
+window.__seek=(t)=>{
+  $('amb').style.transform=`rotate(${t*3}deg) scale(${1+t*.015})`;
+  const net=cl(t/1)*(t<9.6?1:1-e((t-9.6)/.6));svg.style.opacity=net*.9;
+  C.forEach((c,i)=>{const ph=(t*1.6+i*.37)%3;const f=ph<.25?1-ph/.25:0;c.setAttribute('r',6+f*7);c.style.filter=f>0?`drop-shadow(0 0 ${10*f+4}px ${N[i][2]})`:'';});
+  E.forEach(([i,j],k)=>{const sp=.5+((k*7)%5)/10,ph=(t*sp+k*.13)%1;const x=N[i][0]+(N[j][0]-N[i][0])*ph,y=N[i][1]+(N[j][1]-N[i][1])*ph;P[k].setAttribute('cx',x);P[k].setAttribute('cy',y);P[k].setAttribute('opacity',t>3.2?1:0);L[k].setAttribute('stroke',t>3.2?'#3d3260':'#2e2646');});
+  $('t1').style.opacity=win(t,.6,3.1);$('t1').firstElementChild.style.filter=`blur(${(1-e((t-.6)/.5))*14}px)`;
+  $('t2').style.opacity=win(t,3.3,5.9);$('t2').firstElementChild.style.filter=`blur(${(1-e((t-3.3)/.5))*14}px)`;
+  $('t3').style.opacity=win(t,6.1,9.4);
+  $('t4').style.opacity=e((t-9.8)/.5);[...$('dots').children].forEach((d,i)=>{d.setAttribute('opacity',.35+.65*((Math.sin(t*6-i*1.2)+1)/2));});
+};window.__seek(0);
+</script>
