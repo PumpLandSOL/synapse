@@ -229,3 +229,14 @@ how SYNAPSE works, in 22 seconds:
 
 synapsepad.net
 ```
+
+**18 · vs pump.fun + PONS** (`brand/synapse-vs-pads.png`)
+```
+pump.fun and PONS launch coins.
+
+SYNAPSE launches coins that think.
+
+every coin gets its own treasury, a trading brain, half of every trade fee, and automatic buybacks from its profits. every move logged in public.
+
+synapsepad.net
+```

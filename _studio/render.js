@@ -28,6 +28,7 @@ const SIZES = {
   'synapse-curve': [2400, 1350],
   'synapse-fees': [2400, 1350],
   'synapse-public': [2400, 1350],
+  'synapse-vs-pads': [2400, 1350],
 };
 
 const only = process.argv[2];
